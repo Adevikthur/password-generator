@@ -13,4 +13,185 @@
 
 body {
   font-family: "Tomorrow", serif;
+  display: flex;
+  padding: 80px 200px;
+  background-color: var(--black);
+  color: var(--white);
+  margin: 0;
+}
+
+.password {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.password-gen {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.password-gen__text-holder {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.password-gen__text-holder h1,
+.password-gen__text-holder p {
+  margin: 0;
+}
+.password-gen__text-holder p {
+  letter-spacing: 4px;
+}
+.password-gen__text-holder h1 {
+  font-size: 44px;
+  text-transform: uppercase;
+  color: var(--text-grey);
+}
+.password-gen__text-holder h1 span {
+  color: var(--aureolin-yellow);
+}
+.password-gen__input {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  border: var(--aquablue) 1px solid;
+  background-color: rgba(0, 240, 255, 0.1);
+  border-width: thin;
+  padding: 16px 24px;
+  justify-content: space-between;
+}
+.password-gen__input svg {
+  width: 24px;
+  fill: var(--aquablue);
+}
+.password-gen__input svg:hover {
+  fill: var(--white);
+  cursor: pointer;
+}
+.password-gen__input svg:active {
+  fill: var(--aureolin-yellow);
+  cursor: pointer;
+}
+.password-gen__input #input,
+.password-gen__input p {
+  margin: 0;
+  color: var(--white);
+  font-size: 16px;
+  line-height: 24px;
+}
+.password-history {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 390px;
+}
+.password-history__records {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.password-history__records .password-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.password-history__records .password-row__info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.password-history__records .password-row__info h6,
+.password-history__records .password-row__info p {
+  margin: 0;
+}
+.password-history__records .password-row__info h6 {
+  font-size: 14px;
+  color: var(--grey-4);
+}
+.password-history__records .password-row__info p {
+  font-size: 12px;
+  text-align: left;
+  color: var(--grey);
+}
+.password-history__records .password-row__info p:hover {
+  cursor: text;
+  color: var(--grey);
+}
+.password-history__records .password-row svg {
+  width: 24px;
+  fill: var(--white);
+}
+.password-history__records .password-row svg:hover {
+  fill: var(--white);
+  cursor: pointer;
+}
+.password-history__records .password-row svg:active {
+  fill: var(--aureolin-yellow);
+  cursor: pointer;
+}
+.password-history h3 {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  align-self: flex-start;
+  letter-spacing: 4px;
+}
+.password-history p {
+  margin: 0;
+  text-align: center;
+  color: var(--aureolin-yellow);
+}
+.password-history p:hover {
+  color: #cdcd05;
+  cursor: pointer;
+}
+.password-history p:active {
+  color: var(--white);
+  cursor: pointer;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  font-family: "Tomorrow", serif;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+  background-color: var(--aquablue);
+  gap: 24px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  margin: 0;
+  padding: 16px 32px;
+}
+.btn p {
+  margin: 0;
+}
+.btn object,
+.btn svg {
+  width: 24px;
+}
+.btn:hover {
+  color: var(--aquablue);
+  background-color: transparent;
+  border: var(--aquablue) 1px solid;
+  cursor: pointer;
+}
+.btn:hover object,
+.btn:hover svg {
+  fill: var(--aquablue);
+}
+.btn:active {
+  color: var(--aquablue);
+  background-color: rgba(0, 240, 255, 0.2);
+  border: var(--aquablue) 1px solid;
+  cursor: pointer;
+}
+.btn:active object,
+.btn:active svg {
+  fill: var(--aquablue);
 }/*# sourceMappingURL=main.css.map */

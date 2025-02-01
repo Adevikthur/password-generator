@@ -13,5 +13,221 @@
 
 body {
     font-family: "Tomorrow", serif;
+    display: flex;
+    padding: 80px 200px;
+    background-color: var(--black);
+    color: var(--white);
+    margin: 0;
+}
 
+.password {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    &-gen {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+
+        &__text-holder {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            h1,
+            p {
+                margin: 0;
+            }
+
+            p {
+                letter-spacing: 4px;
+            }
+
+            h1 {
+                font-size: 44px;
+                text-transform: uppercase;
+                color: var(--text-grey);
+
+                span {
+                    color: var(--aureolin-yellow);
+                }
+            }
+        }
+
+        &__input {
+            display: flex;
+            flex-direction: row;
+            gap: 80px;
+            border: var(--aquablue) 1px solid;
+            background-color: rgba(#00F0FF, 10%);
+            border-width: thin;
+            padding: 16px 24px;
+            justify-content: space-between;
+
+            svg {
+                width: 24px;
+                fill: var(--aquablue);
+
+                &:hover {
+                    fill: var(--white);
+                    cursor: pointer;
+                }
+
+                &:active {
+                    fill: var(--aureolin-yellow);
+                    cursor: pointer;
+                }
+            }
+
+            #input,
+            p {
+                margin: 0;
+                color: var(--white);
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    &-history {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        width: 390px;
+
+        &__records {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            .password-row {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                &__info {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+
+                    h6,
+                    p {
+                        margin: 0;
+
+                    }
+
+                    h6 {
+                        font-size: 14px;
+                        color: var(--grey-4);
+                    }
+
+                    p {
+                        font-size: 12px;
+                        text-align: left;
+                        color: var(--grey);
+
+                        &:hover {
+                            cursor: text;
+                            color: var(--grey);
+                        }
+                    }
+                }
+
+                svg {
+                    width: 24px;
+                    fill: var(--white);
+
+                    &:hover {
+                        fill: var(--white);
+                        cursor: pointer;
+                    }
+
+                    &:active {
+                        fill: var(--aureolin-yellow);
+                        cursor: pointer;
+                    }
+                }
+
+            }
+        }
+
+        h3 {
+            font-size: 16px;
+            line-height: 24px;
+            text-transform: uppercase;
+            font-weight: 700;
+            align-self: flex-start;
+            letter-spacing: 4px;
+        }
+
+        p {
+            margin: 0;
+            text-align: center;
+            color: var(--aureolin-yellow);
+
+            &:hover {
+                color: #cdcd05;
+                cursor: pointer;
+            }
+
+            &:active {
+                color: var(--white);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    font-family: "Tomorrow", serif;
+    align-items: center;
+    justify-content: center;
+    color: var(--black);
+    background-color: var(--aquablue);
+    gap: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin: 0;
+    padding: 16px 32px;
+
+    p {
+        margin: 0;
+
+    }
+
+    object,
+    svg {
+        width: 24px;
+    }
+
+    &:hover {
+        color: var(--aquablue);
+        background-color: transparent;
+        border: var(--aquablue) 1px solid;
+        cursor: pointer;
+
+        object,
+        svg {
+            fill: var(--aquablue);
+        }
+    }
+
+    &:active {
+        color: var(--aquablue);
+        background-color: rgba(#00F0FF, 20%);
+        border: var(--aquablue) 1px solid;
+        cursor: pointer;
+
+        object,
+        svg {
+            fill: var(--aquablue);
+        }
+    }
 }
