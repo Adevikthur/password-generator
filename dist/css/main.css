@@ -1,1 +1,16 @@
-/*# sourceMappingURL=main.css.map */
+:root {
+  --white: #Fff;
+  --black: #000;
+  --grey: #747474;
+  --black-bg: #090909;
+  --text-grey: #EEEEEE;
+  --aquablue: #00F0FF;
+  --aureolin-yellow: #F8EF00;
+  --grey-4: #bbb;
+  --alabaster: #fafafa;
+  --text-field: #EBEDF0;
+}
+
+body {
+  font-family: "Tomorrow", serif;
+}/*# sourceMappingURL=main.css.map */
