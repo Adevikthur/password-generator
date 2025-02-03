@@ -20,6 +20,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   position: relative;
+  justify-self: center;
 }
 
 #image {
@@ -205,4 +206,76 @@ body {
 .btn:active object,
 .btn:active svg {
   fill: var(--aquablue);
+}
+
+@media (max-width: 768px) {
+  body {
+    display: flex;
+    align-content: center;
+    padding: 16px;
+    overflow-x: hidden;
+  }
+  .password-gen {
+    width: 90%;
+    padding: 16px;
+    align-content: center;
+    gap: 56px;
+  }
+  .password-gen h1 {
+    font-size: 28px;
+  }
+  .password-gen p {
+    font-size: 14px;
+  }
+  .password-gen .password-gen__input {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+  }
+  .password-gen .password-gen__input p,
+  .password-gen .password-gen__input input {
+    font-size: 18px;
+  }
+  .password-gen .password-gen__input svg {
+    width: 24px;
+    height: 24px;
+  }
+  .password-gen button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 400px) {
+  body {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+  }
+  .password-gen {
+    width: 100%;
+    padding: 8px;
+  }
+  .password-gen h1 {
+    font-size: 24px;
+  }
+  .password-gen p {
+    font-size: 13px;
+  }
+  .password-gen .password-gen__input {
+    padding: 8px;
+    width: 100%;
+  }
+  .password-gen .password-gen__input p,
+  .password-gen .password-gen__input input {
+    font-size: 16px;
+  }
+  .password-gen .password-gen__input svg {
+    width: 20px;
+    height: 20px;
+  }
+  .password-gen button {
+    padding: 12px;
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=main.css.map */

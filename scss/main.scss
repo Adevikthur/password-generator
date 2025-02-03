@@ -20,6 +20,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     position: relative;
+    justify-self: center;
 
 
 }
@@ -242,6 +243,98 @@ body {
         object,
         svg {
             fill: var(--aquablue);
+        }
+    }
+}
+
+
+//Tablets
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        align-content: center;
+        padding: 16px;
+        overflow-x: hidden;
+
+    }
+
+    .password-gen {
+        width: 90%;
+        padding: 16px;
+        align-content: center;
+        gap: 56px;
+
+
+        h1 {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        .password-gen__input {
+            width: 100%;
+            max-width: 100%;
+            padding: 10px;
+
+            p,
+            input {
+                font-size: 18px;
+            }
+
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+        }
+    }
+}
+
+// Mobile
+@media (max-width: 400px) {
+    body {
+        display: flex;
+        justify-content: center;
+        padding: 16px;
+    }
+
+    .password-gen {
+        width: 100%;
+        padding: 8px;
+
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 13px;
+        }
+
+        .password-gen__input {
+            padding: 8px;
+            width: 100%;
+
+            p,
+            input {
+                font-size: 16px;
+            }
+
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        button {
+            padding: 12px;
+            font-size: 14px;
         }
     }
 }
