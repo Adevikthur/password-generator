@@ -95,9 +95,10 @@ const characters = [
 let inputText = document.getElementById("input-text");
 
 function generatePassword() {
-  let random = Math.floor(Math.random() * characters.length);
+  let password = "";
   for (let i = 0; i < 12; i++) {
-    inputText.textContent += characters(random);
+    let random = Math.floor(Math.random() * characters.length);
+    password += characters[random];
   }
-  return random;
+  inputText.textContent = password;
 }
