@@ -2,8 +2,13 @@
 <html lang="en">
 
 <head>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <link
         href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
@@ -24,10 +29,14 @@
             <div class="password-gen__input">
                 <p type="text" id="input-text" readonly placeholder="Generated password"></p>
                 <div class="copy-container" style="position: relative; display: inline-block;">
-                    <svg xmlns="http://www.w3.org/2000/svg" onclick="copy()" id="copy" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
-                        <path d="M192,72V216a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V72a8,8,0,0,1,8-8H184A8,8,0,0,1,192,72Zm24-40H72a8,8,0,0,0,0,16H208V184a8,8,0,0,0,16,0V40A8,8,0,0,0,216,32Z"></path>
+                    <svg xmlns="http://www.w3.org/2000/svg" onclick="copy()" id="copy" width="32" height="32"
+                        fill="#000000" viewBox="0 0 256 256">
+                        <path
+                            d="M192,72V216a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V72a8,8,0,0,1,8-8H184A8,8,0,0,1,192,72Zm24-40H72a8,8,0,0,0,0,16H208V184a8,8,0,0,0,16,0V40A8,8,0,0,0,216,32Z">
+                        </path>
                     </svg>
-                    <div id="copy-tooltip" style="position: absolute; background: #333; color: white; padding: 4px 8px; border-radius: 4px; font-size: 12px; white-space: nowrap; visibility: hidden; top: -25px; left: 50%; transform: translateX(-50%);">
+                    <div id="copy-tooltip"
+                        style="position: absolute; background: #333; color: white; padding: 4px 8px; border-radius: 4px; font-size: 12px; white-space: nowrap; visibility: hidden; top: -25px; left: 50%; transform: translateX(-50%);">
                         Copied!
                     </div>
                 </div>
@@ -47,4 +56,4 @@
 </body>
 <script src="index.js"></script>
 
-</html> 
+</html>
