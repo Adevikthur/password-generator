@@ -23,12 +23,14 @@
             </div>
             <div class="password-gen__input">
                 <p type="text" id="input-text" readonly placeholder="Generated password"></p>
-                <svg xmlns="http://www.w3.org/2000/svg" onclick="copy()" id="copy" width="32" height="32" fill="#000000"
-                    viewBox="0 0 256 256" id="copy">
-                    <path
-                        d="M192,72V216a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V72a8,8,0,0,1,8-8H184A8,8,0,0,1,192,72Zm24-40H72a8,8,0,0,0,0,16H208V184a8,8,0,0,0,16,0V40A8,8,0,0,0,216,32Z">
-                    </path>
-                </svg>
+                <div class="copy-container" style="position: relative; display: inline-block;">
+                    <svg xmlns="http://www.w3.org/2000/svg" onclick="copy()" id="copy" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+                        <path d="M192,72V216a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V72a8,8,0,0,1,8-8H184A8,8,0,0,1,192,72Zm24-40H72a8,8,0,0,0,0,16H208V184a8,8,0,0,0,16,0V40A8,8,0,0,0,216,32Z"></path>
+                    </svg>
+                    <div id="copy-tooltip" style="position: absolute; background: #333; color: white; padding: 4px 8px; border-radius: 4px; font-size: 12px; white-space: nowrap; visibility: hidden; top: -25px; left: 50%; transform: translateX(-50%);">
+                        Copied!
+                    </div>
+                </div>
             </div>
             <button class="btn" id="pass-gen" onclick="generatePassword()">Generate Password
                 <!-- <object data="/media/rotate.svg" type="" id="generate"></object> -->
@@ -45,4 +47,4 @@
 </body>
 <script src="index.js"></script>
 
-</html>
+</html> 
